@@ -1,42 +1,66 @@
+" Syntax highlighting
 syntax on
 
+" Colorscheme
 colorscheme desert256
 
-set nocp
+" Use Vim settings, rather than Vi settings (much better!).
+" This must be first, because it changes other options as a side effect.
+set nocompatible
 
-set number
-
-set relativenumber
-
-set cursorline
-
-set linebreak
-
-set showbreak=++
-
-set showmatch
-
-set hlsearch
-
-set incsearch
-
-set autoindent
-
-set expandtab
-
-set shiftwidth=4
-
-set smartindent
-
-set smarttab
-
-set ruler
-
-set autochdir
-
+" Allow backspacing over everything in insert mode.
 set backspace=indent,eol,start
 
-" Antlr syntax
+" Print lines number
+set number
+
+" Print number lines relative to current line
+" current line is zero
+set relativenumber
+
+" Show line of cursor
+set cursorline
+
+" Display completion matches in a status line
+set wildmenu
+
+" Wrap long lines at a character rather than try to fit it on screen
+set linebreak
+
+" Show where the linebreak is
+set showbreak=++
+
+" Highlight where matching brackets are
+set showmatch
+
+" Highlight matches (:nohlsearch turns highlighting off)
+set hlsearch
+
+" Show matches as you type, enter goes to first match
+set incsearch
+
+" Copy indent from current line when starting a new line
+set autoindent
+
+" Use the appropriate number of spaces when typing 'tab'
+set expandtab
+
+" Number of spaces to use when indenting automatically
+set shiftwidth=4
+
+" Do smart autoindenting when starting a new line
+set smartindent
+
+" Tab behaves like tab (you can remove tabs)
+set smarttab
+
+" Show the line and col number of current position of the cursor
+set ruler
+
+" When opening a file, go to its directory directly
+set autochdir
+
+" Antlr syntax highlighting
 au BufRead,BufNewFile *.g  set filetype=antlr3
 au BufRead,BufNewFile *.g4 set filetype=antlr4
 
