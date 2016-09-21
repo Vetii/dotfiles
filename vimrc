@@ -55,10 +55,18 @@ set smartindent
 set smarttab
 
 " Show the line and col number of current position of the cursor
-set ruler
+" set ruler
 
 " When opening a file, go to its directory directly
 set autochdir
+
+" Customization of status line
+set laststatus=2 " Always displaying the status line
+set statusline=\[%-.60F\] " full file path, justified left, with mac 60 chars
+set statusline+=\:\ %{&ff} "fileformat
+set statusline+=%y    " file type
+set statusline+=%=    " left / right separator
+set statusline+=%c,\%l/%L "column, line / total_lines
 
 " Antlr syntax highlighting
 au BufRead,BufNewFile *.g  set filetype=antlr3
