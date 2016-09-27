@@ -2,7 +2,10 @@
 syntax on
 
 " Colorscheme
-colorscheme desert256
+colorscheme lucius
+
+" Background
+set background=dark
 
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
@@ -56,7 +59,6 @@ set smarttab
 
 " Show the line and col number of current position of the cursor
 " set ruler
-
 " When opening a file, go to its directory directly
 set autochdir
 
