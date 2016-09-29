@@ -70,7 +70,11 @@ set statusline+=%y    " file type
 set statusline+=%=    " left / right separator
 set statusline+=%c,\%l/%L "column, line / total_lines
 
+" SPECIFIC SYNTAX HIGHLIGHTING
 " Antlr syntax highlighting
-au BufRead,BufNewFile *.g  set filetype=antlr3
-au BufRead,BufNewFile *.g4 set filetype=antlr4
+au BufRead,BufNewFile *.g   set filetype=antlr3
+au BufRead,BufNewFile *.g4  set filetype=antlr4
 
+" FsLex and FsYacc syntax highlighting
+au BufRead,BufNewFile *.fsl set filetype=lex 
+au BufRead,BufNewFile *.fsy set filetype=yacc
