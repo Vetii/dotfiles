@@ -70,6 +70,12 @@ set statusline+=%y    " file type
 set statusline+=%=    " left / right separator
 set statusline+=%c,\%l/%L "column, line / total_lines
 
+" KEYBOARD SHORTCUTS
+" F2 opens a shell "
+nnoremap <F2> :!sh<CR>
+" F3 opens the .vimrc in a stacked window "
+nnoremap <F3> <C-w>s:e ~/.vimrc<CR>
+
 " SPECIFIC SYNTAX HIGHLIGHTING
 " Antlr syntax highlighting
 au BufRead,BufNewFile *.g   set filetype=antlr3
@@ -78,3 +84,6 @@ au BufRead,BufNewFile *.g4  set filetype=antlr4
 " FsLex and FsYacc syntax highlighting
 au BufRead,BufNewFile *.fsl set filetype=lex 
 au BufRead,BufNewFile *.fsy set filetype=yacc
+
+" F# uses the style of ocaml
+au BufRead,BufNewFile *.fs set filetype=ocaml
