@@ -70,6 +70,12 @@ set statusline+=%y    " file type
 set statusline+=%=    " left / right separator
 set statusline+=%c,\%l/%L "column, line / total_lines
 
+" Prints all whitespaces as letters
+" The letters to use
+set listchars=eol:↓,tab:>-,trail:_
+" Activate the space showing mode
+set list
+
 " KEYBOARD SHORTCUTS
 " F2 opens a shell "
 nnoremap <F2> :!sh<CR>
