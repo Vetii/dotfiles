@@ -96,3 +96,7 @@ au BufRead,BufNewFile *.fsy set filetype=yacc
 
 " F# uses the style of ocaml
 au BufRead,BufNewFile *.fs set filetype=ocaml
+
+" Install pathogen
+" Will put all plugins into the .vim/bundle directory
+execute pathogen#infect()
