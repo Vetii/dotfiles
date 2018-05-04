@@ -30,6 +30,9 @@ set wildmenu
 " Wrap long lines at a character rather than try to fit it on screen
 set linebreak
 
+" End line around 80 characters
+set tw=80
+
 " Show where the linebreak is
 set showbreak=++
 
