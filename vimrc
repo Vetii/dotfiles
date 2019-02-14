@@ -107,3 +107,6 @@ execute pathogen#infect()
 
 " Activate ALE auto completion
 let g:ale_completion_enabled=1
+
+" Activate ultisnips
+let g:UltiSnipsExpandTrigger="<tab>"
