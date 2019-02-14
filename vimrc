@@ -104,3 +104,6 @@ autocmd BufEnter *.md set spell
 " Install pathogen
 " Will put all plugins into the .vim/bundle directory
 execute pathogen#infect()
+
+" Activate ALE auto completion
+let g:ale_completion_enabled=1
