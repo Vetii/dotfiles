@@ -110,6 +110,7 @@ let g:ale_completion_enabled=1
 
 let g:ale_linters = {
 \    'python' : ['pyls'],
+\     'haskell': ['cabal_ghc', 'hlint', 'stack_ghc'],
 \}
 
 " Activate ultisnips
