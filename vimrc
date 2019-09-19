@@ -117,3 +117,7 @@ let g:UltiSnipsExpandTrigger="<tab>"
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 
+" Configuring merlin
+let g:opamshare = "$HOME/.opam/system/share"
+execute "set runtimepath +=" . g:opamshare . "/merlin/vim"
+
