@@ -103,6 +103,7 @@ autocmd BufEnter *.md set spell
 
 " Activate ALE auto completion
 let g:ale_completion_enabled=1
+set omnifunc=ale#completion#OmniFunc
 
 let g:ale_linters = {
 \    'python' : ['pyls'],
@@ -112,4 +113,7 @@ let g:ale_linters = {
 " Activate ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"
 
+" Activate omni completion
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
 
