@@ -1,3 +1,6 @@
+" Encoding
+set encoding=utf-8
+
 " Syntax highlighting
 syntax on
 
