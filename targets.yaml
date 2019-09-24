@@ -1,0 +1,6 @@
+fish: ~/.config/fish
+i3: ~/.config/i3
+nvim: ~/.config/nvim
+vim: ~/.vim
+vimrc: ~/.vimrc
+tmux.conf: ~/.tmux.conf
