@@ -8,7 +8,8 @@
  '(frame-background-mode nil)
  '(package-selected-packages
    (quote
-    (flycheck yasnippet lsp-ui company-lsp company lsp-mode htmlize slime evil ##))))
+    (geiser helm racket-mode magit cider haskell-mode flycheck-julia julia-mode flycheck yasnippet lsp-ui company-lsp company lsp-mode htmlize slime evil ##)))
+ '(sentence-end-double-space nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -40,6 +41,15 @@
 ;; Add lsp completion to company-mode
 (require 'company-lsp)
 (push 'company-lsp company-backends)
+(add-hook 'prog-mode-hook 'company-mode)
+
+(setq org-babel-clojure-backend 'cider)
+(require 'cider)
+
+;; Configuration to be able to run racket in org-mode
+(setq scheme-program-name "/usr/bin/racket")
+(add-hook 'scheme-mode-hook 'geiser-mode)
+(setq geiser-default-implementation 'racket)
 
 ;; BABEL: Executing source code
 ;; Inside org documents
@@ -47,4 +57,7 @@
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((python . t)
-   (clojure . t)))
+   (clojure . t)
+   (shell . t)
+   (scheme . t)
+   (haskell . t)))
