@@ -5,6 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes '(wombat))
  '(display-line-numbers 'relative)
+ '(explicit-shell-file-name "/bin/bash")
  '(frame-background-mode nil)
  '(lsp-clients-clangd-executable "clangd-6.0")
  '(org-src-preserve-indentation nil)
