@@ -14,6 +14,7 @@
    '(:foreground default :background default :scale 1.5 :html-foreground "Black" :html-background "Transparent" :html-scale 1.0 :matchers
                  ("begin" "$1" "$" "$$" "\\(" "\\[")))
  '(org-src-preserve-indentation nil)
+ '(org-src-tab-acts-natively t)
  '(package-selected-packages
    (quote
     (ivy helm racket-mode vala-mode yasnippet-classic-snippets evil-magit magit yasnippet-snippets flycheck yasnippet lsp-ui company-lsp company lsp-mode htmlize slime evil ##)))
