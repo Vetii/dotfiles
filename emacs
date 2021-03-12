@@ -7,6 +7,8 @@
  '(display-line-numbers 'relative)
  '(explicit-shell-file-name "/bin/bash")
  '(frame-background-mode nil)
+ '(haskell-interactive-popup-errors nil)
+ '(indent-tabs-mode nil)
  '(lsp-clients-clangd-executable "clangd-6.0")
  '(org-format-latex-options
    '(:foreground default :background default :scale 1.5 :html-foreground "Black" :html-background "Transparent" :html-scale 1.0 :matchers
