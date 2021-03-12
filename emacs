@@ -77,7 +77,9 @@
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((python . t)
+   (shell . t)
    (dot . t)))
+
 ;; Use the python3 for python code blocs
 (setq org-babel-python-command "python3")
 (setq python-shell-interpreter "/usr/bin/python3")
