@@ -16,8 +16,7 @@
  '(org-src-preserve-indentation nil)
  '(org-src-tab-acts-natively t)
  '(package-selected-packages
-   (quote
-    (ivy helm racket-mode vala-mode yasnippet-classic-snippets evil-magit magit yasnippet-snippets flycheck yasnippet lsp-ui company-lsp company lsp-mode htmlize slime evil ##)))
+   '(groovy-mode gradle-mode julia-repl julia-mode cider counsel haskell-mode ivy racket-mode vala-mode yasnippet-classic-snippets evil-magit magit yasnippet-snippets flycheck yasnippet lsp-ui company-lsp company lsp-mode htmlize slime evil ##))
  '(sentence-end-double-space nil))
 
 ;; Dead keys stuff?
