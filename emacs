@@ -20,6 +20,9 @@
     (ivy helm racket-mode vala-mode yasnippet-classic-snippets evil-magit magit yasnippet-snippets flycheck yasnippet lsp-ui company-lsp company lsp-mode htmlize slime evil ##)))
  '(sentence-end-double-space nil))
 
+;; Dead keys stuff?
+(require 'iso-transl)
+
 ;; Evil mode
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
