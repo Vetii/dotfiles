@@ -74,6 +74,9 @@
  'org-babel-load-languages
  '((python . t)
    (dot . t)))
+;; Use the python3 for python code blocs
+(setq org-babel-python-command "python3")
+(setq python-shell-interpreter "/usr/bin/python3")
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
