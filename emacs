@@ -91,6 +91,12 @@
       '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
         "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"))
 
+;; Change some syntax tables, so that my_var is ONE word and not two words.
+(add-hook 'python-mode-hook (lambda () (modify-syntax-entry ?_ "w")))
+(add-hook 'java-mode-hook (lambda () (modify-syntax-entry ?_ "w")))
+; (modify-syntax-entry ?_ "w" python-mode-syntax-table)
+; (modify-syntax-entry ?_ "w" java-mode-syntax-table)
+
 ;; Enable column mode
 (setq column-number-mode t)
 
