@@ -1,5 +1,6 @@
 if status is-interactive
 and not set -q TMUX
+and not test "$TERM" = "dumb"
     exec tmux
 end
 
