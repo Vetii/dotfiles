@@ -16,7 +16,7 @@
  '(org-src-preserve-indentation nil)
  '(org-src-tab-acts-natively t)
  '(package-selected-packages
-   '(groovy-mode gradle-mode julia-repl julia-mode cider counsel haskell-mode ivy racket-mode vala-mode yasnippet-classic-snippets evil-magit magit yasnippet-snippets flycheck yasnippet lsp-ui company-lsp company lsp-mode htmlize slime evil ##))
+   '(geiser groovy-mode gradle-mode julia-repl julia-mode cider counsel haskell-mode ivy racket-mode vala-mode yasnippet-classic-snippets evil-magit magit yasnippet-snippets flycheck yasnippet lsp-ui company-lsp company lsp-mode htmlize slime evil ##))
  '(sentence-end-double-space nil))
 
 ;; Dead keys stuff?
@@ -47,8 +47,10 @@
 ;; Add lsp completion to company-mode
 (require 'company-lsp)
 (push 'company-lsp company-backends)
-; (add-hook 'after-init-hook 'global-company-mode)
-; (global-set-key [C-tab] 'company-complete)
+;; Configuration to be able to run racket in org-mode
+(setq scheme-program-name "/usr/bin/racket")
+(add-hook 'scheme-mode-hook 'geiser-mode)
+(setq geiser-default-implementation 'racket)
 
 ;; Automatic cleanup of whitespace when saving files.
 (add-hook 'before-save-hook 'whitespace-cleanup)
@@ -82,6 +84,7 @@
 (org-babel-do-load-languages
  'org-babel-load-languages
  '((python . t)
+   (clojure . t)
    (shell . t)
    (dot . t)))
 
