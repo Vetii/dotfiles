@@ -33,7 +33,7 @@
 ;; LSP Mode: Add UI (Better hovering and stuff)
 (require 'lsp-ui)
 (add-hook 'lsp-mode-hook 'lsp-ui-mode)
-(add-hook 'lsp-mode-hook 'flycheck-mode) ;; For displaying error messages
+;; (add-hook 'lsp-mode-hook 'flycheck-mode) ;; For displaying error messages
 
 ;; Add lsp completion to company-mode
 (require 'company-lsp)
