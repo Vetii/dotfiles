@@ -83,6 +83,14 @@
 ;; Use the python3 for python code blocs
 (setq org-babel-python-command "python3")
 (setq python-shell-interpreter "/usr/bin/python3")
+
+;; Make sure org-mode exports with minted
+(setq org-latex-listings 'minted
+      org-latex-packages-alist '(("" "minted"))
+      org-latex-pdf-process
+      '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
+        "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"))
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
