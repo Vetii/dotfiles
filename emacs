@@ -97,6 +97,10 @@
 ; (modify-syntax-entry ?_ "w" python-mode-syntax-table)
 ; (modify-syntax-entry ?_ "w" java-mode-syntax-table)
 
+;; Include some plugins into org-mode
+(eval-after-load "org"
+                 '(require 'ox-md nil t))
+
 ;; Enable column mode
 (setq column-number-mode t)
 
