@@ -115,6 +115,8 @@ let g:ale_linters = {
 
 " Activate ultisnips
 let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " Activate omni completion
 filetype plugin on
